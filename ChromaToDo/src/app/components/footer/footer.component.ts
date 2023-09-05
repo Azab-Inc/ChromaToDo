@@ -6,9 +6,8 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './footer.component.html',
-  styles: [
-  ]
+  styles: [],
 })
 export class FooterComponent {
-
+  year: number = new Date().getFullYear();
 }
