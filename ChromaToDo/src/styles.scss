@@ -5,5 +5,9 @@
 @layer components {
   * {
     @apply duration-300;
+
+    a {
+      @apply hover:cursor-pointer;
+    }
   }
 }
