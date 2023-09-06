@@ -6,9 +6,10 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './nav.component.html',
-  styles: [
-  ]
+  styles: [],
 })
 export class NavComponent {
-
+  showCategories() {
+    alert('Show categories');
+  }
 }
