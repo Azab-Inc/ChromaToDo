@@ -8,6 +8,7 @@ module.exports = {
         mainG: "#249b46",
         mainY: "#fcc92c",
         mainB: "#1274e9",
+        accent: "#73787d",
       },
     },
   },
