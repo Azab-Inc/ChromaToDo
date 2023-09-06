@@ -9,5 +9,28 @@
     a {
       @apply hover:cursor-pointer;
     }
+
+    form {
+      input,
+      textarea {
+        @apply rounded-md border-[1px] border-mainB p-3 placeholder:text-mainB;
+      }
+    }
+
+    .btn {
+      @apply text-white py-3 px-5 flex justify-center items-center rounded-md;
+    }
+
+    .btn-pri {
+      @apply bg-mainG;
+    }
+
+    .btn-warn {
+      @apply bg-mainY;
+    }
+
+    .btn-danger {
+      @apply bg-mainR;
+    }
   }
 }
