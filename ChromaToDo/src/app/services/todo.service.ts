@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ChromeService } from './chrome.service';
-import { Todo } from '../todo';
-import { Category } from '../category';
+import { Todo } from '../interfaces/todo';
+import { Category } from '../interfaces/category';
 
 @Injectable({
   providedIn: 'root',

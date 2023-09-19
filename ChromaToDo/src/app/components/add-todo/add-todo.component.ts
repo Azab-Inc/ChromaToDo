@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TodoService } from 'src/app/services/todo.service';
 import { CategoryService } from 'src/app/services/category.service';
-import { Category } from 'src/app/category';
+import { Category } from 'src/app/interfaces/category';
 
 @Component({
   selector: 'app-add-todo',
