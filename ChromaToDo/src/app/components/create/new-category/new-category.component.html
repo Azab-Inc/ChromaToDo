@@ -1,0 +1,13 @@
+<form class="flex flex-wrap">
+  <span class="w-full">New Category</span>
+  <input
+    class="w-2/3 bg-slate-200 text-mainB"
+    type="text"
+    required
+    [(ngModel)]="newCategory.name"
+    name="newCategoryName"
+  />
+  <button type="submit" class="w-1/3 btn btn-warn" (click)="addCategory()">
+    Add
+  </button>
+</form>

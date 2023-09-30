@@ -1,10 +1,29 @@
-<nav class="fixed top-0 left-0 right-0">
-  <div class="text-xl text-white flex justify-between bg-mainG p-3">
-    <div class="flex gap-x-1 font-bold">
+<nav class="fixed top-0 left-0 right-0 relative">
+  <div class="text-xl text-white flex justify-between">
+    <div class="flex gap-x-1 font-bold bg-mainG p-3 w-1/2">
       <span>Chroma</span>
       <span>To</span>
       <span>Do</span>
     </div>
-    <a (click)="showCategories()">Categories</a>
+    <div class="flex flex-col gap-3 relative bg-mainG w-1/2 text-right px-3">
+      <button
+        (click)="displayCategories = !displayCategories"
+        class="text-white px-4 py-2 rounded-md ml-auto"
+      >
+        Categories
+      </button>
+    </div>
+  </div>
+  <div class="absolute top-10 right-0">
+    <div
+      *ngIf="displayCategories"
+      class="flex flex-col gap-y-3 duration-300 w-1/2 ml-auto min-h-[20vh] max-h-[40vh] overflow-y-auto p-3 bg-mainG text-lg text-white"
+    >
+      <button class="px-3 text-left" *ngFor="let category of categories">
+        {{ category.id }} {{ category.name }}
+      </button>
+      <hr class="my-3 border-2" />
+      <app-new-category></app-new-category>
+    </div>
   </div>
 </nav>
